@@ -7,7 +7,8 @@ function sortArticles(name) {
 }
 
 touristSpots.sort((a,b) => sortArtilcles(a).localCompare(sortArticles(b)));
-const bandList = document.getElementByTagName("ul").[0];
+const bandList = document.createElement("ul");
+bandList.TagName = "band";
 
 for(let i =0; i<touristSpots.length; i++){
 	var li = document.createElement("li");
